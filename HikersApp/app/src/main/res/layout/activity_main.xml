@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="erpam.hikersapp.MainActivity"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hiker&apos;s App"
+        android:id="@+id/textView"
+        android:textSize="32sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude"
+        android:id="@+id/lat"
+        android:layout_marginTop="35dp"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/lng"
+        android:layout_alignStart="@+id/lng"
+        android:textColor="#ffffff"
+        android:textColorHint="#810c0c"
+        android:textColorHighlight="#111323" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude"
+        android:id="@+id/lng"
+        android:layout_below="@+id/lat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:textSize="24sp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accuracy"
+        android:id="@+id/accuracy"
+        android:layout_marginTop="36dp"
+        android:textSize="24sp"
+        android:layout_below="@+id/lng"
+        android:layout_alignLeft="@+id/lng"
+        android:layout_alignStart="@+id/lng"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed"
+        android:id="@+id/speed"
+        android:textSize="24sp"
+        android:layout_below="@+id/altitude"
+        android:layout_alignLeft="@+id/accuracy"
+        android:layout_alignStart="@+id/accuracy"
+        android:layout_marginTop="25dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bearing"
+        android:id="@+id/bearing"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/speed"
+        android:layout_alignStart="@+id/speed"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altitude"
+        android:id="@+id/altitude"
+        android:layout_marginTop="35dp"
+        android:textSize="24sp"
+        android:layout_below="@+id/bearing"
+        android:layout_alignLeft="@+id/speed"
+        android:layout_alignStart="@+id/speed"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:id="@+id/address"
+        android:textSize="24sp"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/speed"
+        android:layout_alignLeft="@+id/speed"
+        android:layout_alignStart="@+id/speed"
+        android:textColor="#ffffff" />
+</RelativeLayout>
