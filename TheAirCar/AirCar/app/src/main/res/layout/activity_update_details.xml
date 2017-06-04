@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_update_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.eryk.aircar.UpdateDetails"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="@string/updateYourProfile"
+        android:id="@+id/update_textView"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/update_textView"
+        android:hint="@string/email"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginTop="80dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_password"
+        android:inputType="textPassword"
+        android:layout_below="@id/update_email"
+        android:hint="@string/password"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:ems="5"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_repass"
+        android:inputType="textPassword"
+        android:layout_below="@id/update_password"
+        android:hint="@string/confirmpassword"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/main_blue"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/update_button"
+        android:text="@string/update"/>
+
+</RelativeLayout>

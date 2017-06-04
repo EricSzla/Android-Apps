@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Poke Shadow Quiz - Gen #1</string>
+    <string name="start">Start</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6430259150460207/1830155574</string>
+    <string name="title_activity_admob">admob</string>
+
+    <string name="action_settings">Settings</string>
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="interstitial_ad_unit_id">ca-app-pub-6430259150460207/4011565977</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_splash_ad">SplashAd</string>
+    <string name="game_over">Game Over</string>
+    <string name="watch_ad">Do not worry! Now you can watch an ad to get one more life !</string>
+    <string name="watch_ad_button">Give me free life !</string>
+    <string name="no_thanks">Start again</string>
+    <string name="the_end">Congratulations!</string>
+    <string name="coming_soon">Generation #2 Coming Out Soon !</string>
+    <string name="start_over">Go back</string>
+    <string name="reset">Reset The Game</string>
+</resources>

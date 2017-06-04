@@ -1,0 +1,27 @@
+===========================================================================
+  FAQ
+===========================================================================
+
+
+Question: The Save to Album doesn't work on Android.
+Answer: Please check the document NOTES_ANDROID.txt for an explanation on setting up "write permissions" on Android.
+
+Question: Why does taking a photo take some seconds.
+Answer: Capture Camera Kit, enables the Android/iOS anti-shaking on the device which will not take a photo before the camera is hold still.
+
+Question: There is a feature which Capture Camera Kit doesn't include, can you make it ? 
+Answer: Sometimes we will consider that and have done so in the past. Please write to tastybits8@gmail.com to request new featured.
+
+Question: Do you need to use OnGUI with CameraCaptureKit ? 
+Answer: No, there is a prefab which can be used to get up and running quickly. Check out the scene named "1. Getting Started - Prefab ( Beginner )"
+For a quick demonstration of the prefab. You're meant to use the code provided in the "CameraCaptureUIDemo.cs" class as a boilerplate code 
+to getting started with the prefab.
+
+Question: Why is the Flash button not available. 
+Answer: The buttons in the CameraCaptureUI prefab for flash and ISO are available when the camera device reports they are available.
+
+
+
+
+
+

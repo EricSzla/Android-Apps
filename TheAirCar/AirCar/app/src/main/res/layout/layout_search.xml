@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient"
+    style="@style/AppThemeDrawer">
+
+    <android.support.design.widget.FloatingActionButton
+        android:src="@drawable/ic_menu_manage"
+        android:tint="@color/main_blue"
+        app:fabSize="mini"
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_search_searchBox"
+        android:hint="@string/whereToRent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/bubble_thumb_height"
+        android:textSize="24sp"
+        android:inputType="text"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:alpha="0"
+        android:textColorLink="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_search_chooseCarHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/layout_search_makeSpinner"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/white"
+        android:text="@string/chooseACar"
+        android:alpha="0" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_search_makeSpinner"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:alpha="0"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_search_modelSpinner"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:alpha="0"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_search_searchButton"
+        android:layout_centerHorizontal="true"
+        android:background="@color/main_blue"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/bubble_thumb_height"
+        android:alpha="0"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_search_resetButton"
+        android:background="@color/main_blue"
+        android:text="@string/reset"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/bubble_thumb_height"
+
+        android:alpha="0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_search_datesTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/layout_search_fromButton"
+        android:text="@string/dates"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="50dp"
+        android:alpha="0"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_search_fromButton"
+        android:text="@string/dateFrom"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/layout_search_datesTextView"
+        android:alpha="0"
+        android:textColor="@color/main_blue"
+        android:background="@color/white"
+        android:padding="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_search_toButton"
+        android:text="@string/dateTo"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/layout_search_datesTextView"
+        android:alpha="0"
+        android:textColor="@color/main_blue"
+        android:background="@color/white"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_search_priceRangeText"
+        android:text="@string/priceRange"
+        android:textSize="18sp"
+        android:textColor="@color/main_blue"
+        android:layout_marginTop="@dimen/bubble_thumb_height"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@+id/layout_search_crystalRangeSeekbar"
+        android:layout_centerHorizontal="true"
+        android:alpha="0" />
+
+
+    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+        android:id="@+id/layout_search_crystalRangeSeekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:corner_radius="10"
+        app:min_value="0"
+        app:max_value="1000"
+        app:steps="5"
+        app:bar_color="#a1c8f7"
+        app:bar_highlight_color="@color/main_blue"
+        app:data_type="_integer"
+        app:left_thumb_image="@drawable/car"
+        app:right_thumb_image="@drawable/car"
+        android:alpha="0"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_search_minimumTextView"
+        android:layout_below="@+id/layout_search_crystalRangeSeekbar"
+        android:layout_alignParentStart="true"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:alpha="0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_search_maximumTextView"
+        android:layout_below="@+id/layout_search_crystalRangeSeekbar"
+        android:layout_alignParentEnd="true"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:alpha="0"/>
+
+
+
+
+</RelativeLayout>
